@@ -12,6 +12,10 @@ import { RegistrationComponent } from './registration/registration.component';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule} from '@angular/fire/database';
 import {AngularFirestoreModule } from '@angular/fire/firestore';
+import { PaymentComponent } from './payment/payment.component';
+import { GooglePayButtonModule } from '@google-pay/button-angular';
+import { CountdownModule} from 'ngx-countdown';
+import { K2kComponent } from './k2k/k2k.component';
 
 
 @NgModule({
@@ -20,7 +24,9 @@ import {AngularFirestoreModule } from '@angular/fire/firestore';
     HomeComponent,
     AboutComponent,
     NewsLayoutComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    PaymentComponent,
+    K2kComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +35,8 @@ import {AngularFirestoreModule } from '@angular/fire/firestore';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFirestoreModule,
+    GooglePayButtonModule,
+    CountdownModule
     
   ],
   providers: [],

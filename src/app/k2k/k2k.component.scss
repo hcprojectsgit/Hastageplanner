@@ -1,0 +1,48 @@
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column1 {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+.column2{
+  float:right;
+  width: 33.33%;
+}
+.column3{
+  float: left;
+  width: 33.33%;
+} 
+.column4{
+  float:right;
+  width: 33.33%;
+}.column5{
+  float:left;
+  width: 33.33%;
+}
+.column6{
+  float:right;
+  width: 33.33%;
+}
+.column7{
+  float:left;
+  width: 33.33%;
+}
+.column8{
+  float:right;
+  width: 33.33%;
+}
+.column9{
+  float:left;
+  width: 33.33%;
+}
+.column10{
+  float:right;
+  width: 33.33%;
+}
+
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
