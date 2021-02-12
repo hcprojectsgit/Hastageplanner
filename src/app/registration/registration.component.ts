@@ -1,4 +1,6 @@
+import { AuthService } from './../services/auth.service';
 import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-registration',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistrationComponent implements OnInit {
 
-  constructor() { }
+  errorMessage = '';    // validation of error handles
+  error: {name:string, message:string} = {name: '', message: ''};   // for firebase error handles
+
+  constructor(private authservice: AuthService) { }
 
   ngOnInit(): void {
   }
